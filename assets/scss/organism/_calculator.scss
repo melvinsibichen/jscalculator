@@ -1,0 +1,49 @@
+body{
+   
+    height: $spacer1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $color2;
+}
+
+.container{
+    position: relative;
+    max-width: 300px;
+    width: 100%;
+    border-radius: 12px;
+    padding: 10px 20px 20px;
+    background: $color1;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+.display{
+    height: 80px;
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 25px;
+    outline: none;
+    border: none;
+    text-align: right;
+    color: $color5;
+    pointer-events: none;
+}
+.buttons{
+    display: grid;
+    grid-gap: 10px;
+    /* arranges 4 elements */
+    grid-template-columns: repeat(4,1fr);  
+}
+.buttons button{
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    background-color: $color3;
+    font-size: 20px;
+    cursor: pointer;
+}
+.buttons button:active{
+    transform: scale(0.91);
+}
+.operator{
+    color: $color4;
+}
